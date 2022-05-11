@@ -8,10 +8,13 @@ public class Main {
 
         System.out.println("absicce : "+blue.getAbsicce()+ "---- ordonne : "+blue.getOrdonne());
         blue.surface();
+        blue.périmetre();
         System.out.println("absicce : "+red.getAbsicce()+ "---- ordonne : "+red.getOrdonne());
         red.surface();
+        red.périmetre();
         System.out.println("absicce : "+green.getAbsicce()+ "---- ordonne : "+green.getOrdonne());
         green.surface();
+        green.périmetre();
 
 
     }

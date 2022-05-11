@@ -30,5 +30,14 @@ private int ordonne;
     public void surface(){
         int surface = absicce * ordonne;
         System.out.println("Surface du rectangle : "+ surface);
+        System.out.println();
     }
+    public void périmetre(){
+        int perimetre = (absicce*2) + (ordonne*2);
+        System.out.println("Perimetre du rectangle : "+ perimetre);
+        System.out.println();
+
+    }
+
+
 }
