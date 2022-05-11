@@ -32,6 +32,7 @@ private int ordonne;
         System.out.println("Surface du rectangle : "+ surface);
         System.out.println();
     }
+    //obtenir le perimetre du rectangle
     public void périmetre(){
         int perimetre = (absicce*2) + (ordonne*2);
         System.out.println("Perimetre du rectangle : "+ perimetre);
