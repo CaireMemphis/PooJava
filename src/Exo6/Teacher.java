@@ -9,4 +9,9 @@ private String subject;
         System.out.println("Explanations begins");
     }
 
+    public void donnerAge(){
+        System.out.println("What !? My age is "+ getAge());
+
+    }
+
 }

@@ -13,6 +13,10 @@ public class Test {
         Teacher prof = new Teacher(40);
         prof.hello();
         prof.Explain();
+        prof.donnerAge();
+        System.out.println("No....");
+        prof.setAge(25);
+        prof.donnerAge();
 
     }
 }
