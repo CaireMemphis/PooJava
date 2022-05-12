@@ -34,18 +34,18 @@ public class Student {
         this.nom = nom;
         this.note1 = note1;
         this.note2 = note2;
-
     }
 
-    public void calculMoyenne(){
+    public void calculMoyenne() {
         double nbTotal = 2;
-        moy = (note1+note2)/nbTotal;
+        moy = (note1 + note2) / nbTotal;
     }
-    public void show(){
+
+    public void show() {
         System.out.println("-------------------");
-        System.out.println("nom : "+nom);
+        System.out.println("nom : " + nom);
         System.out.println("--   --   --   --");
-        System.out.println("moyenne : "+moy);
+        System.out.println("moyenne : " + moy);
         System.out.println("-------------------");
     }
 }
