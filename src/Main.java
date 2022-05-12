@@ -1,42 +1,41 @@
 
-import Exo4.AdditionComplexe;
+import Exo5.Point;
 
 
 import java.util.Scanner;
 
 public class Main {
+    static double abs;
+    static double ordo;
     public static void main(String[] args) {
-        int nombre1reel;
-        int nombre1ima;
-        int nombre2reel;
-        int nombre2ima;
+        //generation des 2 points
         Scanner sc = new Scanner(System.in);
+        System.out.println("point 1");
+        System.out.print("absicce : ");
+        abs = sc.nextDouble();
+        System.out.println("---------------");
+        System.out.println("point 1");
+        System.out.print("ordonne : ");
+        ordo = sc.nextDouble();
+        System.out.println("---------------");
+        Point point1 = new Point(abs,ordo);
+        System.out.println("point 2");
+        System.out.print("absicce : ");
+        abs = sc.nextDouble();
+        System.out.println("---------------");
+        System.out.println("point 1");
+        System.out.print("ordonne : ");
+        ordo = sc.nextDouble();
+        System.out.println("---------------");
+        Point point2 = new Point(abs,ordo);
 
-        System.out.print("Premier nombre");
+        System.out.println("P1 ("+point1.getAbscisse()+","+point1.getOrdonné()+")");
+        System.out.println("P2 ("+point2.getAbscisse()+","+point2.getOrdonné()+")");
+        System.out.println("-----------------------");
+        System.out.println(" La distance entre P1 et P2 : ");
 
-        System.out.println("---   ---   ---");
-        System.out.print("Entrez la partie reelle : ");
-        nombre1reel = sc.nextInt();
+        //arrondis de la reponse à 5 chiffres apres la virgule
 
-        System.out.println("---   ---   ---");
-        System.out.print("Entrez la partie imaginaire : ");
-        nombre1ima = sc.nextInt();
-
-        System.out.println("------------------------------------");
-        System.out.println("Second nombre");
-
-        System.out.println("---   ---   ---");
-        System.out.print("Entrez la partie reelle : ");
-        nombre2reel = sc.nextInt();
-
-        System.out.println("---   ---   ---");
-        System.out.print("Entrez la partie imaginaire : ");
-        nombre2ima = sc.nextInt();
-
-        System.out.println("---   ---   ---");
-
-        AdditionComplexe student = new AdditionComplexe(nombre1ima, nombre1reel, nombre2ima, nombre2reel);
-        student.show();
-
+        System.out.printf("%.5f\n",point1.distance(point1,point2));
     }
 }
