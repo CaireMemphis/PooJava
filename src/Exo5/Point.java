@@ -32,7 +32,6 @@ public class Point {
 
 
         double space = 0;
-        double sousSpace = 0;
         double sousX ;
         double sousY;
 
@@ -42,13 +41,8 @@ public class Point {
 
         sousY = point2.ordonné - point1.ordonné;
 
-        //mise au carré des elements contenu dans la racine carré
-
-        sousSpace = (sousX*sousX)+(sousY*sousY);
-
-        // calcul racine carré
-
-        space = Math.sqrt(sousSpace);
+        //mise au carré des elements contenu dans la racine carré et calcul racine carré
+        space = Math.sqrt((sousX*sousX)+(sousY*sousY));
 
         return space;
     }
