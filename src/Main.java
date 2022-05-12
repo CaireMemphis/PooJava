@@ -1,20 +1,27 @@
 import Exo1.Rectangle;
+import exo2.Somme;
+
+import java.util.Scanner;
+
 
 public class Main {
     public static void main(String[] args) {
-        Rectangle blue = new Rectangle(23,28);
-        Rectangle red = new Rectangle(82,12);
-        Rectangle green = new Rectangle(41,40);
+        int nb1;
+        int nb2;
+        Somme somme = new Somme(0,0);
+        somme.sum();
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Chiffre 1 : ");
+        nb1 = sc.nextInt();
+        System.out.println();
+        System.out.print("Chiffre 2 : ");
+        nb2 = sc.nextInt();
+        System.out.println();
+        somme.setN1(nb1);
+        somme.setN2(nb2);
 
-        System.out.println("absicce : "+blue.getAbsicce()+ "---- ordonne : "+blue.getOrdonne());
-        blue.surface();
-        blue.périmetre();
-        System.out.println("absicce : "+red.getAbsicce()+ "---- ordonne : "+red.getOrdonne());
-        red.surface();
-        red.périmetre();
-        System.out.println("absicce : "+green.getAbsicce()+ "---- ordonne : "+green.getOrdonne());
-        green.surface();
-        green.périmetre();
+        somme.sum();
+
 
 
     }
